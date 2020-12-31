@@ -18,3 +18,13 @@ Then run s2i:
 s2i build . golang:1.15 goserver --runtime-image registry.access.redhat.com/ubi8/ubi-minimal --runtime-artifact /go/bin/goserver
 ```
 
+Finally start the application and test it:
+
+```
+docker run --rm -d -p 8080:8080 goserver
+curl http://localhost:8080/
+```
+
+## References:
+
+* https://github.com/openshift/source-to-image/blob/master/docs/runtime_image.md
