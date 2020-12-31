@@ -5,4 +5,9 @@ echo "[INFO] directory: $(pwd) - script: $0 - WORKDIR: $WORKDIR"
 echo '=============================================================='
 
 set -x
-mv -f ./goserver /bin/goserver
+mkdir -p /opt/app-root
+
+mv -f ./goserver /opt/app-root/goserver
+
+chgrp -R 0 /opt/app-root
+chmod -R g=u /opt/app-root
