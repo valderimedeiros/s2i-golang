@@ -7,7 +7,7 @@ import (
 )
 
 func hello(w http.ResponseWriter, req *http.Request) {
-	fmt.Fprintf(w, "CIAO FROM GOLANG!")
+	fmt.Fprintf(w, "CIAO FROM A SIMPLE GOLANG HTTP SERVER!")
 	fmt.Fprintf(w, "\n")
 }
 
