@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo '=============================================================='
+echo "[INFO] directory: $(pwd) - script: $0"
+echo '=============================================================='
+
+set -x
+cd /tmp/src/
+go build goserver.go
+cp ./goserver /go/bin

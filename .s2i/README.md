@@ -1,0 +1,1 @@
+s2i build . golang:1.15 goserver --runtime-image alpine:3.12 --runtime-artifact /go/bin/goserver

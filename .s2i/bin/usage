@@ -1,0 +1,14 @@
+#!/bin/bash -e
+
+cat <<EOF
+This is the goserver S2I image:
+To use it, install S2I: https://github.com/openshift/source-to-image
+
+Sample invocation:
+
+s2i build . golang:1.15 goserver --runtime-image fedora:32 --runtime-artifact /go/bin/goserver
+
+You can then run the resulting image via:
+docker run -d -p 8080:8080 goserver
+and see the test via http://localhost:8080
+EOF
