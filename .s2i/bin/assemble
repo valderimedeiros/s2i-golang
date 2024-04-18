@@ -4,6 +4,9 @@ echo '=============================================================='
 echo "[INFO] directory: $(pwd) - script: $0"
 echo '=============================================================='
 
+mkdir /.cache
+chmod -R 777 /.cache
+
 set -x
 cd /tmp/src/
 go build goserver.go
