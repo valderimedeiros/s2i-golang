@@ -4,5 +4,7 @@ echo '=============================================================='
 echo "[INFO] directory: $(pwd) - script: $0"
 echo '=============================================================='
 
+export SERVER_PORT=$(echo $SERVER_PORT)
+
 set -x
 exec ./bin/goserver
