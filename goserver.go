@@ -14,7 +14,7 @@ func hello(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 
-	port := os.Getenv("SERVER_PORT", "8080")
+	port := os.Getenv("SERVER_PORT")
 	
 	fmt.Printf("START\n")
 	http.HandleFunc("/", hello)
