@@ -4,8 +4,7 @@ echo '=============================================================='
 echo "[INFO] directory: $(pwd) - script: $0"
 echo '=============================================================='
 
-mkdir /.cache
-chmod -R 777 /.cache
+export GOCACHE=/tmp/go-cache
 
 set -x
 cd /tmp/src/
