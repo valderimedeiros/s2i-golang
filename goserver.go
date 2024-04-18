@@ -16,7 +16,7 @@ func main() {
 
 	port := os.Getenv("SERVER_PORT")
 	
-	fmt.Printf("START on port: " + port "\n")
+	fmt.Printf("START on port: " + port + "\n")
 	http.HandleFunc("/", hello)
 	err := http.ListenAndServe(":" + port, nil)
 	if err != nil {
